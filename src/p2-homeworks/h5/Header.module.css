@@ -1,0 +1,35 @@
+.navbar {
+    position: relative;
+    left: -70px;
+    width: 100px;
+    height: 50px;
+    background: white;
+    margin-top: 5px;
+    transition: left .2s linear;
+    display: inline-block;
+    color:black
+}
+
+.navbar:hover {
+    left: 0px;
+}
+
+.navlink{
+    text-decoration: none;
+
+    color:black;
+
+}
+
+.navlink:hover{
+    background-color: grey;
+}
+
+.navlink:active{
+    color: greenyellow;
+}
+
+.navlink .active{
+    color:green
+
+}
