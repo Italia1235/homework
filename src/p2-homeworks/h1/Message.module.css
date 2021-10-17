@@ -1,0 +1,75 @@
+.message {
+    background-color: greenyellow;
+
+    display:grid;
+    grid-template-columns: 65px 1fr;
+
+}
+
+
+.message img {
+    width: 50px;
+    border-radius: 100%;
+
+
+    float:bottom;
+}
+
+.name {
+    grid-area: n;
+
+    color: purple;
+}
+
+
+.dialog {
+    position: relative;
+    background: darkgreen;
+    border: 1px solid #7d9185;
+
+    text-align: center;
+    color: white;
+
+    width: 10%;
+    height: 70px;
+
+}
+
+.dialog:after, .textMessage:before {
+    right: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;;
+}
+
+.dialog:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-right-color: darkgreen;
+    border-width: 18px;
+    top: 50%;
+    margin-top: -18px;;
+}
+
+.dialog:before {
+    border-color: rgba(125, 145, 133, 0);
+    border-right-color: #7d9185;
+    border-width: 12px;
+    top: 50%;
+    margin-top: -19px;
+}
+
+
+.time {
+    grid-area: t;
+    margin-left: 130px;
+}
+
+.dialog {
+    background-color: darkgreen;
+
+
+    border-radius: 20px;
+}
