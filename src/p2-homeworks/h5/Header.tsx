@@ -7,9 +7,9 @@ function Header() {
 
 
         <div className={s.navbar}>
-    <NavLink className={`${s.navlink} ${s.active}`} to={"/pre-junior"}>  <span>Prejunior</span> </NavLink>
-            <NavLink className={`${s.navlink} ${s.active}`} to={"/junior"}>  <span>Junior</span> </NavLink>
-            <NavLink className={`${s.navlink} ${s.active}`} to={"/junior+"}>  <span>Junior+</span> </NavLink>
+    <NavLink className={s.navlink} activeClassName={s.active} to={"/pre-junior"}>  <span>Prejunior</span> </NavLink>
+            <NavLink className={s.navlink} activeClassName={s.active} to={"/junior"}>  <span>Junior</span> </NavLink>
+            <NavLink className={s.navlink} activeClassName={s.active} to={"/junior+"}>  <span>Junior+</span> </NavLink>
         </div>
     )
 }

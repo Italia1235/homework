@@ -26,10 +26,11 @@
 }
 
 .navlink:active{
-    color: greenyellow;
+    background-color: red;
 }
 
-.navlink .active{
-    color:green
+
+.active{
+    color:yellowgreen;
 
 }

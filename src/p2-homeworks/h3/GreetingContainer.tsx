@@ -1,4 +1,4 @@
-import React, {ChangeEvent, ChangeEventHandler, useState} from 'react'
+import React, {ChangeEvent, ChangeEventHandler, useState,KeyboardEvent} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
@@ -30,6 +30,12 @@ else{
 alert(`Hello ${name} !`)
     }
 
+    const onEnter = (e:KeyboardEvent<HTMLInputElement>) =>{
+        if (e.key == "Enter"){
+            addUser()
+            setName("")
+        }
+    }
 
     const totalUsers = users.length
 
@@ -38,6 +44,7 @@ alert(`Hello ${name} !`)
             name={name}
             setNameCallback={setNameCallback}
             addUser={addUser}
+            onEnter={onEnter}
             error={error}
             totalUsers={totalUsers}
         />
