@@ -1,1 +1,1 @@
-This is a training project about small tasks from react/redux. In progress. 
+This is a training project about small tasks from react/redux. In progress. Using github-pages . 
